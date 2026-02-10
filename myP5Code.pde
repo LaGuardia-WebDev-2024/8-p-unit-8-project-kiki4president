@@ -3,8 +3,10 @@ setup = function() {
     size(600, 400);
     background(255,255,255,0);
     
-    drawFish(200, 200, color(200,0,200)); 
-    drawFish(300, 200, color(0,200,200));
+    drawlolipop(200, 200, color(200,0,200)); 
+    drawlolipop(300, 200, color(0,200,200));
+    drawicecream(100,80)
+    drawcup(100,200)
 };
 
 //🟢draw Function - will run on repeat
@@ -17,12 +19,25 @@ mouseClicked = function(){
 
 }
 
-//🟡drawFish Function - will run when called
-var drawFish = function(fishX, fishY, fishColor){
+//🟡drawlolipop Function - will run when called
+var drawlolipop = function(lolipopX, lolipopY, lolipopColor){
   textSize(80);
-  fill(fishColor);
-  text("𓆝", fishX, fishY);
+  fill(lolipopColor);
+  text("🍭", lolipopX, lolipopY);
 };
+
+//drawicecream Function - will run when called
+var drawicecream = function(icecreamX, icecreamY){
+  textSize(80);
+  text("🍦", icecreamX, icecreamY);
+};
+
+//drawcup Function - will run when called 
+var drawcup = function(cupX, cupY){
+  textSize(80);
+  text("🧁", cupX, cupY);
+};
+
 
 
 
